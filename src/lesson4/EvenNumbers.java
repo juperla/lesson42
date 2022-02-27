@@ -10,7 +10,7 @@ public class EvenNumbers {
         long number = scanner.nextInt();
 
         long sum = 0;
-        int numb = 0;
+        int numb;
         String strNumber = Long.toString(number);
         for (int i = 0; i < strNumber.length(); i++) { //Цикл от 0 до количества символов
             numb = strNumber.charAt(i) - '0'; //Получить строковый символ по индексу. -'0' необходим для перевода в тип int

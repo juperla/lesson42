@@ -1,14 +1,18 @@
 
 
+import lesson4.Person;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Person person1 = new Person("Иванов", "Петр", "Михайлович", 23);
+        person1.printName();
+        person1.printAge();
 
-        System.out.print("Введите число:");
-        double x = scanner.nextDouble();
+        Person person2 = new Person("Иванова", "Наталья", "Викторовна", 56);
+        person2.printName();
+        person2.printAge();
 
-        System.out.print("Вы ввели: " + x);
     }
 }
