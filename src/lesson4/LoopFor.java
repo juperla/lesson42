@@ -14,9 +14,6 @@ public class LoopFor {
     }
 
     public static boolean isFourNumber(int n) {
-        if (n % 4 == 0) {
-            return true;
-        }
-        return false;
+        return n % 4 == 0;
     }
 }
