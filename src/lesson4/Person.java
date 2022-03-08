@@ -1,4 +1,5 @@
 package lesson4;
+import lesson4.Calendar;
 
 public class Person {
 
@@ -19,8 +20,7 @@ public class Person {
     }
 
     public void printAge() {
-        System.out.println("Год рождения: " + (2022 - age));
-    }
+        System.out.println("Год рождения: " + (Calendar.year - age)); }
 
     public int getAge() {
         return age;

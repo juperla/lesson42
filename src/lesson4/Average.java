@@ -2,24 +2,23 @@ package lesson4;
 
 import java.util.Scanner;
 
-public class average {
+public class Average {
     public static void main(String[] args) {
         int start;
         int end;
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ведите начало диапазона чисел: ");
+        System.out.print("Введите начало диапазона чисел: ");
         start = scanner.nextInt();
 
-        System.out.print("Ведите конец диапазона чисел: ");
+        System.out.print("Введите конец диапазона чисел: ");
         end = scanner.nextInt();
 
         int sum1 = 0;
         int count1 = 0;
         int sum2 = 0;
         int count2 = 0;
-        double avarage2 = 0;
 
         while (start <= end) {
             sum1 += start;
@@ -29,15 +28,14 @@ public class average {
             if (start % 2 == 0) {
                 sum2 += start;
                 count2++;
-                avarage2 = (double) sum2 / count2;
             }
             ++start;
         }
 
-        double avarage1 = (double) sum1 / count1;
-
-        System.out.println("Среднее арифметическое = " + avarage1);
-        System.out.println("Среднее арифметическое для четных чисел = " + avarage2);
+        double average1 = (double) sum1 / count1;
+        double average2 = (double) sum2 / count2;
+        System.out.println("Среднее арифметическое = " + average1);
+        System.out.println("Среднее арифметическое для четных чисел = " + average2);
     }
 }
 
