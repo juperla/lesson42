@@ -1,21 +1,10 @@
 package lesson4;
-import lesson4.Person;
-import java.util.Scanner;
 
-public class Calendar {
+import java.util.Calendar;
 
-    public static int year;
-    private int month;
-    private int day;
-
-    public Calendar(int year, int month, int day) {
-        this.year = year;
-        this.month = month;
-        this.day = day;
+class Get_Current_Year {
+    public static void main(String args[]) {
+        Calendar cal = Calendar.getInstance();
+        System.out.println("The Current Year is:" + cal.get(Calendar.YEAR));
     }
-
-    public void printYear() {
-        System.out.println("Год рождения: " + year);
-    }
-
 }

@@ -1,6 +1,5 @@
 package lesson4;
-import lesson4.Calendar;
-
+import java.util.Calendar;
 public class Person {
 
     private String familyName;
@@ -14,13 +13,13 @@ public class Person {
         this.middleName = middleName;
         this.age = age;
     }
-
+    Calendar cal = Calendar.getInstance();
     public void printName() {
         System.out.println("Имя: " + name);
     }
 
     public void printAge() {
-        System.out.println("Год рождения: " + (Calendar.year - age)); }
+        System.out.println("Год рождения: " + (cal.get(Calendar.YEAR) - age)); }
 
     public int getAge() {
         return age;

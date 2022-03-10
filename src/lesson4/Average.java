@@ -23,7 +23,6 @@ public class Average {
         while (start <= end) {
             sum1 += start;
             count1++;
-            ++start;
 
             if (start % 2 == 0) {
                 sum2 += start;
